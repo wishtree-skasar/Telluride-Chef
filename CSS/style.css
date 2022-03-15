@@ -150,6 +150,9 @@ img {
   max-width: 57%;
   position: relative;
 }
+.home-banner-res{
+ display: none;
+}
 .home-heading::before {
   content: " ";
   background: url("../Images/home-bg.png");
@@ -165,9 +168,7 @@ img {
 }
 .home-heading p {
   font-size: 20px;
-
 }
-
 .home-banner::before {
   content: " ";
   background: url("../Images/home-banner-1.png");
@@ -532,9 +533,9 @@ footer p {
   flex: 0 0 50%;
   max-width: 50%;
   position: relative;
-  overflow: hidden;
   padding-top: 50px;
   padding-bottom: 120px;
+   overflow: hidden;
 }
 .ride-dinner-info::before{
   content: ' ';
@@ -858,11 +859,13 @@ footer p {
     max-width: 100%;
     order: 1;
     padding-left: 50px;
+    padding-top: 0;
   }
   .home-heading::before {
-    left: -250px;
-    top: 0;
+   left: -141px;
+    top: -121px;
   }
+ 
    .home-banner{
     flex: 0 0 100%;
     max-width: 100%;
@@ -871,6 +874,7 @@ footer p {
   }
   .home-banner::before {
   left: 140px;
+
 }
   .chef-intro-wrapper{
     flex-wrap: wrap;
@@ -883,7 +887,7 @@ footer p {
   .chef-intro-info{
     flex: 0 0 100%;
     max-width: 100%;
-    padding: 0 50px;
+    padding: 0 20px;
   }
 }
 @media (max-width:886px) {
@@ -947,6 +951,9 @@ footer p {
   .contact-form textarea {
     width: 375px;
   }
+    .home-heading{
+    padding-left: 30px;
+  }
   
   /* ---private chef----- */
  .private-chef-wrapper{
@@ -1004,19 +1011,17 @@ footer p {
   max-width: 100%;
   padding-left: 30px;
   padding-right: 30px;
- 
+  overflow: visible;
 }
 .ride-dinner-img{
   flex: 0 0 100%;
   max-width: 100%;
   text-align: center;
 }
-.ride-dinner-info{
-  overflow-x: hidden;
-}
 .ride-dinner-info::before{
-  transform: scale(0.8);
+   width: 90%;
 }
+
 /* -----ride dinner end------ */
 
 
@@ -1029,9 +1034,7 @@ footer p {
 }
 @media (max-width:772px) {
   /* ----home page------ */
-  .home-heading{
-    padding-left: 50px;
-  }
+
   .home-services{
     padding-top: 50px;
   }
@@ -1074,7 +1077,7 @@ footer p {
 
  
 .ride-dinner-info{
-  padding-bottom: 50px;
+  padding-bottom: 0;
 }
 .private-chef-banner{
   display: none;
@@ -1136,6 +1139,10 @@ footer p {
  .testimonials-wrapper::before {
   transform: scale(0.4);
 }
+.home-heading::before {
+  left: -200px;
+  top: -95px;
+}
 }
 @media (max-width:573px) {
   .testimonials-wrapper::before {
@@ -1165,6 +1172,12 @@ footer p {
 .private-chef-info {
     padding: 0;
 }
+.home-banner::before {
+  left: 25px;
+}
+.home-heading h1 {
+  font-size: 25px;
+}
 }
 @media (max-width:565px) {
   .contact-form button {
@@ -1172,6 +1185,19 @@ footer p {
 }
 .testimonal p {
   padding: 0 110px;
+}
+ .home-banner-res{
+    display: block;
+  }
+  .home-banner-img{
+    display: none;
+  }
+  .home-banner::before{
+    width: 0;
+    height: 0;
+  }
+  .home-heading::before {
+  left: -245px;
 }
 }
 @media (max-width:490px) {
@@ -1192,9 +1218,7 @@ footer p {
 .contact-form button {
     margin-left: 0;
 }
-.ride-dinner-info {
-    padding-bottom: 20px;
-}
+
 .private-chef-contact img {
     padding-bottom: 50px;
 }
@@ -1235,14 +1259,30 @@ footer p {
   .contact-form textarea {
     width: 300px;
   }
- 
+  .home-heading::before {
+  left: -330px;
+}
+.home-heading {
+  padding-left: 30px;
+}
+}
+@media (max-width:401px) {
+  .testimonials-wrapper::before {
+  left: -365px;
+}
+.service-img::before {
+  left: 6px;
+}
+.home-heading::before {
+  left: -360px;
+}
+.ride-dinner-info::before {
+    top: 115px;
+}
 }
 @media (max-width: 360px) {
   /* -----home page------- */
-  .home-banner::before {
-  left: 8px;
-  bottom: -26px;
-  }
+  
   .home-heading{
     padding-left: 0;
   }
@@ -1250,9 +1290,14 @@ footer p {
   font-size: 25px;
   }
   .home-heading::before {
-    left: -356px;
-    top: 0;
+    left: -380px;
+    top: -95px;
   }
+  .testimonials-wrapper::before {
+  top: -60px;
+  left: -380px;
+  transform: scale(0.3);
+}
  .chef-intro-img{
     padding-left: 0;
   }
@@ -1296,14 +1341,13 @@ footer p {
 .private-chef-contact img {
     padding-bottom: 30px;
 }
-
+.ride-dinner-info::before {
+    top: 185px;
+}
 }
 @media (max-width:320px) {
   .service-img::before {
-    left: -51px;
+    left: -45px;
 }
-.home-heading::before {
-    left: -396px;
-    top: 0;
-}
+
 }
